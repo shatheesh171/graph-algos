@@ -25,8 +25,8 @@ class DisjointSet:
 
 vertices = ["A", "B", "C", "D", "E"]
 
-ds = DisjointSet(vertices)
-ds.union("A", "B")
-ds.union("A", "C")
-print(ds.find("A"))
-
+if __name__=='__main__':
+    ds = DisjointSet(vertices)
+    ds.union("A", "B")
+    ds.union("A", "C")
+    print(ds.find("A"))
